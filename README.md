@@ -12,5 +12,5 @@ Log into your Pi an run the setup script, then remove it and reboot:
 - `sudo rm shutdownchecksetup.sh`
 - `sudo reboot`
 
-The script gives you also the option tu uninstall.
+The script gives you also the option to uninstall.
 
