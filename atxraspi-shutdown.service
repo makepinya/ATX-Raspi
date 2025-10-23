@@ -1,4 +1,4 @@
-# ATX-Raspi / systemd unit for Debian Bookworm (no rc.local)
+# ATX-Raspi / systemd unit for Debian/Raspberry Pi OS (rc.local is deprecated)
 # Runs the interrupt-driven shutdown/power watcher (shutdownirq.py)
 
 [Unit]
