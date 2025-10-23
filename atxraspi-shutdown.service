@@ -1,13 +1,14 @@
-# ATX-Raspi / systemd unit for Bookworm+
+# ATX-Raspi / systemd unit for Debian Bookworm (no rc.local)
+# Runs the interrupt-driven shutdown/power watcher (shutdownirq.py)
+
 [Unit]
-Description=ATXRaspi shutdown/power watcher (Bookworm, systemd)
+Description=ATX-Raspi shutdown/power watcher (interrupt-driven)
 After=multi-user.target
 
 [Service]
 Type=simple
 User=root
 Group=root
-# Ruta final donde lo instalaremos en la Pi (lo copiará el setup adaptado):
 ExecStart=/usr/bin/python3 /usr/local/sbin/atxraspi-shutdownirq.py
 Restart=always
 RestartSec=1
